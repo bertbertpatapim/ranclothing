@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RAN Clothing - Product</title>
+	<link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>RAN Clothing</h1>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="product.html">Product</a>
+			<a href="cart.html">Cart</a>
+			<a href="contact.html">Contact</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="featured">
+			<h1>New Drop</h1>
+
+			<div class="product-grid">
+
+				<div class="card">
+					<img src="oversized_tee.webp" alt="Ran Oversized Tee in washed black">
+					<h3>Ran Oversized Tee</h3>
+					<p class="price">₱599</p>
+					<button type="button" class="btn add-to-cart" data-id="tee" data-name="Ran Oversized Tee">Add to cart</button>
+				</div>
+
+				<div class="card">
+					<img src="blackhoodie1.webp" alt="Ran Black Hoodie in washed black">
+					<h3>Ran Black Hoodie</h3>
+					<p class="price">₱799</p>
+					<button type="button" class="btn add-to-cart" data-id="hoodie" data-name="Ran Black Hoodie">Add to cart</button>
+				</div>
+
+				<div class="card">
+					<img src="blackcargo.webp" alt="Ran Cargo Pants in black">
+					<h3>Ran Cargo Pants</h3>
+					<p class="price">₱299</p>
+					<button type="button" class="btn add-to-cart" data-id="cargo" data-name="Ran Cargo Pants">Add to cart</button>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>@2026 RAN Clothing. All rights reserved.</p>
+	</footer>
+
+	<div id="toast" class="toast" role="status" aria-live="polite">
+		<span id="toast-text"></span>
+		<a href="cart.html">View cart</a>
+	</div>
+
+	<script src="Product.js"></script>
+
+</body>
+</html>
