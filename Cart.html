@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,4 +105,112 @@
 	<script src="Cart.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RAN Clothing - Cart</title>
+	<link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>RAN Clothing</h1>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="product.html">Product</a>
+			<a href="cart.html">Cart</a>
+			<a href="contact.html">Contact</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page">
+			<h1>Your Cart</h1>
+			<p>Set the quantity of each item you want, fill in your details, then place your order.</p>
+
+			<div id="thanks" class="thank-you">
+				<div class="thank-you-box">
+					<h2>Thank you!</h2>
+					<p>Your order has been placed. RAN Clothing will contact you soon.</p>
+					<p id="thanks-total"></p>
+					<a href="cart.html" class="btn">Close</a>
+				</div>
+			</div>
+
+			<form id="order-form" action="cart.html#thanks" method="get">
+
+				<table>
+					<thead>
+						<tr>
+							<th>Product</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Subtotal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="tee">
+							<td>Ran Oversized Tee</td>
+							<td>₱599</td>
+							<td><input class="qty-input" type="number" name="Oversized Tee (qty)" min="0" max="20" value="0" data-price="599" aria-label="Oversized Tee quantity"></td>
+							<td class="line-total">₱0</td>
+						</tr>
+						<tr id="hoodie">
+							<td>Ran Black Hoodie</td>
+							<td>₱799</td>
+							<td><input class="qty-input" type="number" name="Black Hoodie (qty)" min="0" max="20" value="0" data-price="799" aria-label="Black Hoodie quantity"></td>
+							<td class="line-total">₱0</td>
+						</tr>
+						<tr id="cargo">
+							<td>Ran Cargo Pants</td>
+							<td>₱299</td>
+							<td><input class="qty-input" type="number" name="Cargo Pants (qty)" min="0" max="20" value="0" data-price="299" aria-label="Cargo Pants quantity"></td>
+							<td class="line-total">₱0</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">Total</td>
+							<td id="total-qty">0 items</td>
+							<td id="grand-total">₱0</td>
+						</tr>
+					</tfoot>
+				</table>
+
+				<p id="cart-message" role="alert" style="color: var(--glow-2); margin: 0;"></p>
+
+				<label for="name">Full name</label>
+				<input type="text" id="name" name="Name" required>
+
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="Phone" required>
+
+				<label for="address">Delivery address</label>
+				<textarea id="address" name="Address" rows="3" required></textarea>
+
+				<div>
+					<button type="submit">Place Order</button>
+					<button type="reset" class="btn-secondary" id="clear-btn">Clear</button>
+				</div>
+
+			</form>
+
+			<a href="product.html" class="btn btn-secondary">Continue Shopping</a>
+		</section>
+	</main>
+
+	<footer>
+		<p>@2026 RAN Clothing. All rights reserved.</p>
+	</footer>
+
+	<script src="Cart.js"></script>
+
+</body>
+>>>>>>> 6ce5b51cf9fd906f00cf652e13f3bc503bed2885
 </html>
